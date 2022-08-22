@@ -70,8 +70,12 @@ body.append('div')
 	.append('span').style('font-weight', 'normal')
 	.text('Multi-goal policy learning for robotic manipulation is challenging.  Prior successes have used state-based representations of the objects or provided demonstration data to facilitate learning. In this paper, by hand-coding a high-level discrete representation of the domain, we show that policies to reach dozens of goals can be learned with a single network using Q-learning from pixels.  The agent focuses learning on simpler, local policies which are sequenced together by planning in the abstract space.  We compare our method against standard multi-goal RL baselines, as well as other methods that leverage the discrete representation, on a challenging block construction domain. We find that our method can build more than a hundred different block structures, and demonstrate forward transfer to structures with novel objects.  Lastly, we deploy the policy learned in simulation on a real robot.')
 
-// description
-make_header('Overview')
+make_header('Paper')
+body.append('div').style('font-weight', 'bold').text(title)
+	.append('div').style('font-weight', 'normal').text(authors.map(d => ' '+d.name))
+	.append('div').style('font-style', 'italic').text("IROS'22")
+	.append('div').style('font-style', 'normal').append('a').attr('href', 'https://arxiv.org/abs/2207.11313').text('[Arxiv]')
+	
 
 make_header('Video Summary')
 body.append('iframe')
@@ -92,7 +96,15 @@ body.append('div').attr('class', 'content')
 	.style('border-radius', '6px')
 	.style('padding', '10px')
 	.style('background-color', '#eee')
-	.text('coming soon...')
+	.append('pre')
+	.style('font-size', '0.8rem')
+	.text(`@misc{graphstructured2022,
+  title = {Graph-Structured Policy Learning for Multi-Goal Manipulation Tasks},
+  author = {Klee, David and Biza, Ondrej and Platt, Robert},
+  url = {https://arxiv.org/abs/2207.11313},
+  publisher = {arXiv},
+  year = {2022},
+}`)
 
 // common syntax
 body.selectAll('.flex-row')
