@@ -78,10 +78,11 @@ body.append('div').style('font-weight', 'bold').text(title)
 	
 
 make_header('Video Summary')
-body.append('iframe')
+body.append('video')
 	.attr('width', '620px')
 	.attr('height', '400px')
 	.attr('src', './assets/video.mp4')
+	.attr('type', 'video/mp4')
 
 make_header('Code')
 body.append('div').attr('class', 'content')
