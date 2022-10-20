@@ -83,6 +83,7 @@ body.append('video')
 	.attr('height', '400px')
 	.attr('src', './assets/video.mp4')
 	.attr('type', 'video/mp4')
+	.attr('controls', '')
 
 make_header('Code')
 body.append('div').attr('class', 'content')
