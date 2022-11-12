@@ -1,6 +1,6 @@
 Graph-Structured Policy Learning for Multi-Goal Manipulation Tasks
 ---------------------------------------------------------------------
-[Paper]() | [Project Page](https://dmklee.github.io/graph-structured-manip/)
+[Paper](https://arxiv.org/abs/2207.11313) | [Project Page](https://dmklee.github.io/graph-structured-manip/)
 
 ---------------------------------------------------------------------
 This is the code for the paper "Graph-Structured Policy Learning for Multi-Goal
